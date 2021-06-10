@@ -1,0 +1,115 @@
+\hypertarget{classNTP}{}\doxysection{Класс NTP}
+\label{classNTP}\index{NTP@{NTP}}
+
+
+Клиент сервера \mbox{\hyperlink{classNTP}{NTP}}.  
+
+
+
+
+{\ttfamily \#include $<$NTP.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNTP_ad5329b66940db7a86b23c5843e2f5772}{NTP}} (std\+::string address=\char`\"{}185.\+224.\+145.\+68\char`\"{})
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classNTP}{NTP}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNTP_abb22ab248fbfb4d955ff48d16961169d}{$\sim$\+NTP}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \mbox{\hyperlink{classNTP}{NTP}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNTP_a3f456cb7972f979c2b2a83f6f1f69884}{get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Запрос к \mbox{\hyperlink{classNTP}{NTP}} серверу и получение разницы во времени \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNTP_a8dd4b99971ed4e1061276f275fbdde40}{remote\+Adress}}
+\item 
+int \mbox{\hyperlink{classNTP_a153a298283d4b94fadef49eb68cde580}{remote\+Port}} = htons(123)
+\item 
+int \mbox{\hyperlink{classNTP_aa34b395581f215cfffad7e4438703616}{soket}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Клиент сервера \mbox{\hyperlink{classNTP}{NTP}}. 
+
+Метод get\+Time получает время с \mbox{\hyperlink{classNTP}{NTP}} сервера и разницу меду системым временем и временем серера. Можно передать в конструктор адрес любого \mbox{\hyperlink{classNTP}{NTP}} серевера. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classNTP_ad5329b66940db7a86b23c5843e2f5772}\label{classNTP_ad5329b66940db7a86b23c5843e2f5772}} 
+\index{NTP@{NTP}!NTP@{NTP}}
+\index{NTP@{NTP}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{NTP()}{NTP()}}
+{\footnotesize\ttfamily NTP\+::\+NTP (\begin{DoxyParamCaption}\item[{std\+::string}]{address = {\ttfamily \char`\"{}185.224.145.68\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classNTP}{NTP}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em string} & address адрес \mbox{\hyperlink{classNTP}{NTP}} сервера в формате 127.\+0.\+0.\+1 по умолчанию\+: 185.\+224.\+145.\+68\\
+\hline
+\end{DoxyParams}
+Создаёт сокет и привязывает его к локальному адресу \begin{DoxyWarning}{Предупреждения}
+При передаче не верного адреса в верном формате подключение произойдёт 
+\end{DoxyWarning}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classntp__error}{ntp\+\_\+error}},при} & ошибке \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNTP_abb22ab248fbfb4d955ff48d16961169d}\label{classNTP_abb22ab248fbfb4d955ff48d16961169d}} 
+\index{NTP@{NTP}!````~NTP@{$\sim$NTP}}
+\index{````~NTP@{$\sim$NTP}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{$\sim$NTP()}{~NTP()}}
+{\footnotesize\ttfamily NTP\+::$\sim$\+NTP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор класса \mbox{\hyperlink{classNTP}{NTP}}. 
+
+Закрывает сокет, открытый в конструкторе. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classNTP_a3f456cb7972f979c2b2a83f6f1f69884}\label{classNTP_a3f456cb7972f979c2b2a83f6f1f69884}} 
+\index{NTP@{NTP}!getTime@{getTime}}
+\index{getTime@{getTime}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily void NTP\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Запрос к \mbox{\hyperlink{classNTP}{NTP}} серверу и получение разницы во времени 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classntp__error}{ntp\+\_\+error}},если} & произошла ошибка. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{classNTP_a8dd4b99971ed4e1061276f275fbdde40}\label{classNTP_a8dd4b99971ed4e1061276f275fbdde40}} 
+\index{NTP@{NTP}!remoteAdress@{remoteAdress}}
+\index{remoteAdress@{remoteAdress}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{remoteAdress}{remoteAdress}}
+{\footnotesize\ttfamily int NTP\+::remote\+Adress\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNTP_a153a298283d4b94fadef49eb68cde580}\label{classNTP_a153a298283d4b94fadef49eb68cde580}} 
+\index{NTP@{NTP}!remotePort@{remotePort}}
+\index{remotePort@{remotePort}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{remotePort}{remotePort}}
+{\footnotesize\ttfamily int NTP\+::remote\+Port = htons(123)\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classNTP_aa34b395581f215cfffad7e4438703616}\label{classNTP_aa34b395581f215cfffad7e4438703616}} 
+\index{NTP@{NTP}!soket@{soket}}
+\index{soket@{soket}!NTP@{NTP}}
+\doxysubsubsection{\texorpdfstring{soket}{soket}}
+{\footnotesize\ttfamily int NTP\+::soket\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{NTP_8h}{NTP.\+h}}\item 
+\mbox{\hyperlink{NTP_8cpp}{NTP.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\begin{theindex}
+
+  \item {$\sim$NTP}
+    \subitem {NTP}, \hyperpage{8}
+
+  \indexspace
+
+  \item {getTime}
+    \subitem {NTP}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{11}
+  \item {main.cpp}, \hyperpage{11}
+    \subitem {main}, \hyperpage{11}
+
+  \indexspace
+
+  \item {NTP}, \hyperpage{7}
+    \subitem {$\sim$NTP}, \hyperpage{8}
+    \subitem {getTime}, \hyperpage{8}
+    \subitem {NTP}, \hyperpage{7}
+    \subitem {remoteAdress}, \hyperpage{8}
+    \subitem {remotePort}, \hyperpage{8}
+    \subitem {soket}, \hyperpage{9}
+  \item {NTP.cpp}, \hyperpage{12}
+  \item {NTP.h}, \hyperpage{12}
+  \item {ntp\_error}, \hyperpage{9}
+    \subitem {ntp\_error}, \hyperpage{10}
+
+  \indexspace
+
+  \item {remoteAdress}
+    \subitem {NTP}, \hyperpage{8}
+  \item {remotePort}
+    \subitem {NTP}, \hyperpage{8}
+
+  \indexspace
+
+  \item {soket}
+    \subitem {NTP}, \hyperpage{9}
+
+\end{theindex}
